@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <h1>Employee update form</h1>
+    <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+
+        ename:<input type="text" name="ename" value="{{employ.ename}}"><br>
+        eid:<input type="text" name="eid" value="{{employ.eid}}"><br>
+        esal:<input type="text" name="esal" value="{{employ.esal}}"><br>
+        eexp:<input type="text" name="eexp" value="{{employ.eexp}}"><br>
+        <input type="submit" name="ok">
+
+    </form>
+
+</body>
+</html>
+
